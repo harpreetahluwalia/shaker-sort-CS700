@@ -1,0 +1,63 @@
+\hypertarget{main_8cpp_source}{}\doxysection{main.\+cpp}
+\mbox{\hyperlink{main_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00020}00020 \textcolor{comment}{// Including required liberaries}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00021}00021 \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00022}00022 \textcolor{preprocessor}{\#include<random>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00023}00023 \textcolor{preprocessor}{\#include <bits/stdc++.h>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00024}00024 \textcolor{preprocessor}{\#include<conio.h>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00027}00027 \textcolor{comment}{// including header file}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00028}00028 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{shaker__sort_8h}{shaker\_sort.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00030}00030 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00040}\mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00040}} \textcolor{keywordtype}{int} \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00041}00041 \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00043}00043     cout<<\textcolor{stringliteral}{"{}\(\backslash\)n**************************  ASSIGNMENT 4 ******************************\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00044}00044     \textcolor{keywordtype}{int} n, i;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00045}00045     cout<<\textcolor{stringliteral}{"{}\(\backslash\)nEnter the number of data element to be sorted: "{}};  \textcolor{comment}{//taking user input for array size}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00046}00046     cin>>n;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00047}00047     clock\_t start, end;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00049}00049     \textcolor{keywordtype}{int} arr1[n];            \textcolor{comment}{// creating 2 arrays for sorting both ascending and descending order}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00050}00050     \textcolor{keywordtype}{int} arr2[n];}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00051}00051     srand(time(0));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00052}00052     \textcolor{keywordflow}{for}(i = 0; i < n; i++)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00053}00053     \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00054}00054         arr1[i] = rand() \% n;           \textcolor{comment}{// generating random number and storing to array}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00055}00055         arr2[i] = arr1[i];}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00056}00056     \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00058}00058     cout<<\textcolor{stringliteral}{"{}\(\backslash\)nAscending Sorting in progress ... "{}}<<endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00059}00059     start = clock();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00060}00060     \mbox{\hyperlink{shaker__sort_8cpp_add9bc0ebdd76bdd74193d26041e2fe9c}{Shaker\_Sort}}(arr1, n, \textcolor{stringliteral}{"{}ascending"{}});              \textcolor{comment}{// calling shaker\_sort() method for sorting with ascending parameter}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00061}00061     end = clock();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00063}00063     \textcolor{keywordtype}{double} total\_time;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00064}00064     total\_time = double(end -\/ start) / double(CLOCKS\_PER\_SEC);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00066}00066     cout<<\textcolor{stringliteral}{"{}Array Size : "{}}<<n;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00067}00067     cout << \textcolor{stringliteral}{"{}\(\backslash\)nExecution time for sort in ascending order : "{}} << fixed << total\_time << setprecision(5);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00068}00068     cout << \textcolor{stringliteral}{"{} sec "{}} << endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00072}00072     cout<<\textcolor{stringliteral}{"{}\(\backslash\)nDescending Sorting in progress ... "{}}<<endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00073}00073     start = clock();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00074}00074     \mbox{\hyperlink{shaker__sort_8cpp_add9bc0ebdd76bdd74193d26041e2fe9c}{Shaker\_Sort}}(arr1, n, \textcolor{stringliteral}{"{}descending"{}});      \textcolor{comment}{// calling shaker\_sort() method for sorting with descending parameter}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00075}00075     end = clock();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00077}00077     total\_time = double(end -\/ start) / double(CLOCKS\_PER\_SEC);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00078}00078     cout<<\textcolor{stringliteral}{"{}Array Size : "{}}<<n;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00079}00079     cout << \textcolor{stringliteral}{"{}\(\backslash\)nExecution time for sort in descending order : "{}} << fixed << total\_time << setprecision(5);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00080}00080     cout << \textcolor{stringliteral}{"{} sec "{}} << endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00081}00081     getch();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00082}00082     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00083}00083 \}}
+
+\end{DoxyCode}
