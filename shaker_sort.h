@@ -1,7 +1,7 @@
 /**
  *  @file   shaker_sort.h
  *  @author Harpreet Singh
- *  @brief  It implements the shaker sort algorithm that is bi-directional bubble sort
+ *  @brief  It includes the declaration of the shaker sort algorithm function that is bi-directional bubble sort
  *  @date   10/11/2021
  ***********************************************/
 
