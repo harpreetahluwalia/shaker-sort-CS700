@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1636691896 source:e:\c++\codeblocks code\assignment 4\main.cpp
+	<iostream>
+	<random>
+	<bits/stdc++.h>
+
