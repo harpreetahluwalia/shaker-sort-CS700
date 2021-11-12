@@ -1,6 +1,13 @@
 # depslib dependency file v1.0
-1636691896 source:e:\c++\codeblocks code\assignment 4\main.cpp
+1636703704 source:e:\c++\codeblocks code\assignment 4\main.cpp
 	<iostream>
 	<random>
 	<bits/stdc++.h>
+	<conio.h>
+	"shaker_sort.h"
+
+1636703473 source:e:\c++\codeblocks code\assignment 4\shaker_sort.cpp
+	<iostream>
+
+1636703480 e:\c++\codeblocks code\assignment 4\shaker_sort.h
 
